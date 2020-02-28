@@ -18,6 +18,10 @@ class Profile(models.Model):
     def delete_profile(self):
         self.delete()
 
+    @classmethod
+    def get_profiles(cls):
+        return cls.objects.all()    
+
     def __str__(self):
         return f'{self.name}'
 
@@ -45,15 +49,15 @@ class House(models.Model):
     house_pic = models.ImageField(upload_to='media/')
     house_type = models.CharField(max_length=100)
     no_of_rooms = models.CharField(max_length=5)
-    
+
     price = models.CharField(max_length=100, default=0)
     owner = models.ForeignKey('Owner', on_delete=models.CASCADE)
     date_posted = models.DateTimeField(auto_now_add=True)
-    
-    
+
+
     def save_house(self):
         self.save()
-    
+
     def delete_house(self):
         self.delete()
 
@@ -67,7 +71,7 @@ class House(models.Model):
         house= cls.objects.get(id=house_id)
         return house
 
-    @classmethod   
+    @classmethod
     def update_house(cls,id,house_type):
         cls.objects.filter(pk = id).update(house_type=house_type)
         new_name_object = cls.objects.get(house_type = house_type)
@@ -95,4 +99,3 @@ class Owner(models.Model):
         self.delete()
     def __str__(self):
         return f'{self.first_name}'
-

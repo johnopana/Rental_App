@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Carter+One|Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Carter+One|Merienda|Merienda+One&display=swap');.welcome{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("/static/images/img/real9.0d593e763bd5.jpg")center/ cover no-repeat fixed;
+    min-height: 80vh;
+
+
+}
+
+#services{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("/static/images/img/office1.b82aef350d44.jpg")center/ cover no-repeat fixed;
+    /* background-size: cover;
+
+    background-position: center; */
+    color: #fff !important;
+
+    min-height: 90vh;
+}
+.services{
+    margin: 90px;
+    text-align: center;
+}
+.services h1:after{
+    content: '';
+    background: #fff;
+    display: block;
+    width: 150px;
+    margin: 10px auto;
+    height: 3px;
+}
+#row{
+    text-align: center;
+}
+.icon{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.serv:hover{
+    box-shadow: 5px 7px 9px -3px rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+.house2{
+    display: none;
+}
+.office2{
+    display: none;
+}
+.pet2{
+    display: none;
+}
+.house2{
+    display: none;
+}
+.office2{
+    display: none;
+}
+.pet2{
+    display: none;
+}
+.head{
+    font-family: 'Merienda', cursive;
+    padding: 25%;
+}
+
+.goal{
+    border-left: 5px solid red;
+}
+
+#contact p,#contact li a{
+    font-size: 20px
+}
+
+
+h1{
+    font-family: 'Carter One', cursive;
+}
+
+#about h2, h3{
+    font-family: 'Merienda One', cursive;
+}
+
+
+.text-muted{
+    display: none;
+
+}
+
+.reg{
+    border-radius: 25%;
+}
