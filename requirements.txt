@@ -22,7 +22,7 @@ packaging==20.1
 Pillow==7.0.0
 pluggy==0.13.1
 
-django-registration==3.0.1
+django-registration==3.1.2
 django-star-ratings==0.9.1
 idna==2.9
 Pillow==7.0.0
